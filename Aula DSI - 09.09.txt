@@ -1,0 +1,129 @@
+Aula DSI - 09/09
+Roberto Itai
+
+------------ Lista -------------
+
+#Criando uma lista vazia
+lista vazia =[]
+
+#Criando uma lista com elementos
+números= [1,2,3,4,5]
+
+#Criando uma lista com elementos  de diferentes tipos de dados
+lista_mista=[1,"dois", 3.0]
+
+#Criando uma lista com outra lista dentro dela
+lista aninhada=[[1,2],[3,4],[5,6]]
+
+------------------------------------------------
+Para adicionar Item a lista:
+
+Em Python, list.append(item)é um método usado para adicionar um único item ao final de uma lista existente. Este método modifica a lista existente e não retorna uma nova lista; ele retorna None
+
+--------------------------------------------------
+Inserir itens:
+
+Para inserir um item de lista em um índice especificado, use o insert()método .
+
+O insert()método insere um item no índice especificado:
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "orange")
+print(thislist)
+--------------------------------------------------
+Remover item especificado:
+
+O remove()método remove o item especificado.
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+--------------------------------------------------
+Percorrer uma lista:
+
+Você pode percorrer os itens da lista usando um for loop:
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+Usando um loop While:
+
+Você pode percorrer os itens da lista usando um whileloop.
+
+Use a len()função para determinar o comprimento da lista, comece em 0 e percorra os itens da lista consultando seus índices.
+
+Lembre-se de aumentar o índice em 1 após cada iteração.
+lista = [1,2,3]
+i = 0
+while i < len(lista):
+  print(lista[i])
+  i = i + 1
+--------------------------------------------------
+
+Aula DSI - 30/09
+Roberto Itai
+---------------------------------------------------
+
+Loops Python:
+
+Python tem dois comandos de loop primitivos:
+
+loops while
+para laços
+
+count = 0
+while count <= 10:
+print(count)
+count +=1
+
+count é uma variável 
+---------------------------------------------------
+Laços For do Python:
+
+Um loop for é usado para iterar sobre uma sequência (que pode ser uma lista, uma tupla, um dicionário, um conjunto ou uma string).
+Isso é menos parecido com a palavra - chave for em outras linguagens de programação e funciona mais como um método iterador, como encontrado em outras linguagens de programação orientadas a objetos.
+Com o loop for, podemos executar um conjunto de instruções, uma para cada item em uma lista, tupla, conjunto etc.
+
+
+Ex:
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+
+---------------------------------------------------------
+
+A declaração break
+Com a instrução break, podemos parar o loop antes que ele tenha percorrido todos os itens:
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+----------------------------------------------------------
+
+A declaração continue
+Com a instrução continue , podemos parar a iteração atual do loop e continuar com a próxima:
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+----------------------------------------------------------
+
+A função range()
+Para percorrer um conjunto de código um número especificado de vezes, podemos usar a range()função,
+
+A range()função retorna uma sequência de números, começando em 0 por padrão, incrementando em 1 (por padrão) e terminando em um número especificado.
+
+Exemplo:
+Usando a função range():
+
+for x in range(6):
+  print(x)
+
+
+
+
